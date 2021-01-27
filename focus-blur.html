@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Test - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1><center>Post-Test - jQuery</center></h1>
+    <h2>Menerapkan event focus & blur</h2>
+
+    Nama: <input type="text" name="fullname"><br>
+    Pekerjaan: <input type="text" name="pekerjaan">
+
+    
+    <script>
+        // event Focus & Blur
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "#31343a");
+                $(this).css("color", "#fff");
+            });
+            $("input").blur(function(){
+              $(this).css("background-color", "#0cd664");
+            });
+        });
+
+    </script>
+</body>
+</html>

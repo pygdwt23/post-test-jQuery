@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Test - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1><center>Post-Test - jQuery</center></h1>
+    <h2>Menerapkan get val html</h2>
+
+    <p>Nama: <input type="text" name="coba" id="bebas"></p>
+    <button>Tampilkan Output</button>
+    
+    
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            alert("Value: " + $("#bebas").val());
+          });
+        });
+
+    </script>
+</body>
+</html>

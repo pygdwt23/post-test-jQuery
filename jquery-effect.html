@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #relawan1, #relawan2 {
+      padding: 10px;
+      text-align: center;
+      background-color: #31343a;
+      border: solid 1px #fff;
+      color: #0cd660;
+      cursor: pointer;
+    }
+
+    #relawan2 {
+      padding: 20px;
+      display: none;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Test - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1><center>Post-Test - jQuery</center></h1>
+    <h2>Menerapkan effect jQuery</h2>
+
+    <!-- EFEK TOGGLE -->
+    <!-- <button>Hide & Seek</button>
+
+    <p>Show Paragraph</p>
+    <p>Hide Paragraph</p> -->
+
+    <div id="relawan1">Try me!</div>
+    <div id="relawan2">Konidjiwa!</div>
+
+    
+    <script>
+        // event toggle - jQuery effect
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("p").toggle();
+        //         $("p").css("background-color", "#31343a");
+        //         $("p").css("color", "#fff");
+        //         $("p").css("border", "solid", "1px", "#0cd664");
+        //         $("p").css("width", "100%");
+        //     });
+        // });
+
+        $(document).ready(function(){
+          $("#relawan1").click(function(){
+            $("#relawan2").slideToggle("200 milliseconds")
+          })
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Test - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1><center>Post-Test - jQuery</center></h1>
+    <h2>Menerapkan event hide pada element selector jQuery</h2>
+
+    <p>ini adalah sebuah paragraf</p>
+    <p>sembunyikan aku!</p>
+
+    <button>Click to hide all paragraph</button>
+
+    <!-- //jQuery element selector -->
+    <script>
+        // event hide
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+        });
+
+    </script>
+</body>
+</html>
